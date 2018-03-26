@@ -6,6 +6,7 @@ module.exports = Object.assign({}, common, {
     devServer: {
         port: 8080,
         contentBase: path.join(__dirname, '..', 'dist'),
+        historyApiFallback: true,
     },
     devtool: 'source-map',
 });

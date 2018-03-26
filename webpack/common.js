@@ -10,6 +10,7 @@ module.exports = {
         path: path.join(__dirname, '..', 'dist'),
         filename: '[name].module.js',
         sourceMapFilename: '[file].map',
+        publicPath: '/',
     },
     resolve: {
         modules: [

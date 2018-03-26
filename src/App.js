@@ -1,22 +1,27 @@
 import React, { Component } from 'react';
 import { connect } from 'react-redux';
+import { Route, Switch } from 'react-router-dom';
 
-import Button from 'shared/ui-kit/Button';
+import Nav from 'shared/layout/Nav';
+
+import Character from './views/Character';
+import Characters from './views/Characters';
+import Home from './views/Home';
+import NotFound from './views/NotFound';
+
 import './common.scss';
 
-@connect((state) => ({
-    ...state.example
-}))
 export default class App extends Component {
     render() {
-        return (<div className="danger">
-            hello worlds {this.props.travis ? 'travis': 'lower life form'}
+        return (<div>
+            <Nav />
 
-            <Button />
-
-            This is all above app
-
-            {this.props.children}
+            <Switch>
+                <Route exact path="/" component={Home}/>
+                <Route exact path="/character" component={Characters}/>
+                <Route path="/character/:id" component={Character}/>
+                <Route component={NotFound} />
+            </Switch>
         </div>);
     }
 }
