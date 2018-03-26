@@ -13,15 +13,17 @@ import './common.scss';
 
 export default class App extends Component {
     render() {
-        return (<div>
-            <Nav />
+        return (
+            <div>
+                <Nav />
 
-            <Switch>
-                <Route exact path="/" component={Home}/>
-                <Route exact path="/character" component={Characters}/>
-                <Route path="/character/:id" component={Character}/>
-                <Route component={NotFound} />
-            </Switch>
-        </div>);
+                <Switch>
+                    <Route exact path="/" component={Home}/>
+                    <Route exact path="/character" component={Characters}/>
+                    <Route path="/character/:id" component={Character}/>
+                    <Route component={NotFound} />
+                </Switch>
+            </div>
+        );
     }
 }
