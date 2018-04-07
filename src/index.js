@@ -10,7 +10,7 @@ const container = document.createElement('div');
 document.body.appendChild(container);
 
 render((<Provider store={store}>
-        <Routes>
-            <App />
-        </Routes>
-    </Provider>), container);
+    <Routes>
+        <App />
+    </Routes>
+</Provider>), container);

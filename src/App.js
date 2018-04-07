@@ -1,5 +1,4 @@
 import React, { Component } from 'react';
-import { connect } from 'react-redux';
 import { Route, Switch } from 'react-router-dom';
 
 import Nav from 'shared/layout/Nav';
@@ -18,9 +17,9 @@ export default class App extends Component {
                 <Nav />
 
                 <Switch>
-                    <Route exact path="/" component={Home}/>
-                    <Route exact path="/character" component={Characters}/>
-                    <Route path="/character/:id" component={Character}/>
+                    <Route exact path="/" component={Home} />
+                    <Route exact path="/character" component={Characters} />
+                    <Route path="/character/:id" component={Character} />
                     <Route component={NotFound} />
                 </Switch>
             </div>

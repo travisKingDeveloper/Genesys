@@ -7,7 +7,7 @@ const reducers = combineReducers({
 });
 
 export default createStore(
-    reducers, 
-    //This is dirty Redux Tools
-    window.__REDUX_DEVTOOLS_EXTENSION__ && window.__REDUX_DEVTOOLS_EXTENSION__()
+    reducers,
+    // eslint-disable-next-line no-underscore-dangle
+    window.__REDUX_DEVTOOLS_EXTENSION__ && window.__REDUX_DEVTOOLS_EXTENSION__(), // This is dirty Redux Tools
 );
