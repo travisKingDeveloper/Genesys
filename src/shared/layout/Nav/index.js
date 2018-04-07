@@ -8,7 +8,7 @@ export default class Nav extends Component {
         return (
             <ul>
                 <li>
-                    <Link to="/character">Characters</Link>
+                    <Link to="/characters">Characters</Link>
                 </li>
                 <li>
                     <Link to="/character/21">Current Character</Link>
