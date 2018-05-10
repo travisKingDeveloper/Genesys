@@ -6,12 +6,13 @@
   "dependencies": {
     "classnames": "^2.2.5",
     "prop-types": "^15.6.1",
-    "react": "^16.2.0",
-    "react-dom": "^16.2.0",
+    "react": "^16.3.2",
+    "react-dom": "^16.3.2",
     "react-redux": "^5.0.7",
     "react-router-dom": "^4.2.2",
     "redux": "^3.7.2",
-    "redux-actions": "^2.3.0"
+    "redux-actions": "^2.3.0",
+    "styled-components": "^3.2.6"
   },
   "devDependencies": {
     "babel-core": "^6.26.0",
@@ -38,6 +39,7 @@
   },
   "scripts": {
     "start": "cross-env NODE_ENV=development webpack-dev-server --config webpack/index.js --mode development",
-    "build": "cross-env NODE_ENV=production webpack --config webpack/index.js --mode production"
+    "build": "cross-env NODE_ENV=production webpack --config webpack/index.js --mode production",
+    "lint": "eslint ./src"
   }
 }

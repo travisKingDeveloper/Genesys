@@ -1,8 +1,7 @@
 import { handleActions } from 'redux-actions';
 
 const INITIAL_STATE = {
-    name: 'state',
-    travis: true,
+    themeName: 'lightside',
 };
 
 export default handleActions({

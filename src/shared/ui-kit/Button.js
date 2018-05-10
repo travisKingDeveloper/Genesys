@@ -1,12 +1,20 @@
 import React from 'react';
 import { name } from 'shared/utils/formatters';
+import styled from 'styled-components';
 
-export default function() {
+export default function Button() {
     return (
         <div>
-            <button>
+            <StyledButton>
                 {name('Travis', 'King')}
-            </button>
+            </StyledButton>
         </div>
-    )
+    );
 }
+
+const StyledButton = styled.button`
+    background: red;
+`;
+
+// Tagged Template Literal
+
