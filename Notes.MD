@@ -23,9 +23,23 @@
     * Reflect on the means to routing in application.
     * Implemented a nested route (Character => Crit Injuries, Items)
 
+# Session 3 (2018-04-23 - 2018-05-09)
+
+* THEME / CONTEXT
+    * FML Need to Update React with React-Dom
+    * Applied Context Theming to Application
+    * Connected To Redux in higher order component
+
+## Take Away / Tasks
+
+* - [ ] THEMING
+    * Think about and create a single theme. Sizes (mini, small medium large), colors etc. More is encouraged
+    * Convert Existing components to styled components
+    * Implement Top Level (NAV) Styled Componenet
+    * Implement Toggling of Themes
+
 #  Planning
 
 * Thunks / Sagas
-* Theming
 * Icons
-
+* HOC for Theme Consumer

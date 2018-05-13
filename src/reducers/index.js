@@ -1,9 +1,11 @@
 import { combineReducers, createStore } from 'redux';
 
-import { default as example } from './example';
+import example from './example';
+import userSettings from './user-settings';
 
 const reducers = combineReducers({
     example,
+    userSettings,
 });
 
 export default createStore(
