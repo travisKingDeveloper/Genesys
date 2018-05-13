@@ -15,11 +15,11 @@
 
 ## Take Away / Tasks
 
-* - [ ] ARCHITECTURE
+* - [x] ARCHITECTURE
     * Reread the structure of the application, come to Matt for any thing that feels off about the structure. 
 * - [x] ESLINT
     * Correct all errors and format the ESLINT to personal / vault ui standard.
-* - [ ] ROUTING  
+* - [x] ROUTING  
     * Reflect on the means to routing in application.
     * Implemented a nested route (Character => Crit Injuries, Items)
 
